@@ -1,0 +1,12 @@
+version: "3"
+
+services:
+  jupyter:
+    build:
+      context: .
+      dockerfile: ./containers/pyth/Dockerfile
+    ports:
+      - "8888:8888" #jupyter
+      - "4040:4040" #spark job
+    restart: unless-stopped
+    command: sh /jupyter_run.sh
