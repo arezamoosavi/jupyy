@@ -24,6 +24,7 @@ RUN adduser --disabled-password --gecos '' myuser
 
 RUN apt-get install -y build-essential
 RUN pip3 install jupyterlab
+
 # RUN pip3 install pyspark
 # ENV PYSPARK_PYTHON=/usr/bin/python3
 
